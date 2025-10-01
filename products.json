@@ -1,0 +1,101 @@
+{
+  "whatsappNumber": "+415255867075",
+  "products": [
+    {
+      "id": 1,
+      "name": "4K Ultra HD CCTV Camera",
+      "category": "cctv",
+      "description": "High-resolution 4K security camera with night vision and weatherproof design.",
+      "price": "Contact for Price",
+      "image": "📹"
+    },
+    {
+      "id": 2,
+      "name": "Dome CCTV Camera",
+      "category": "cctv",
+      "description": "Indoor/outdoor dome camera with 360° coverage and motion detection.",
+      "price": "Contact for Price",
+      "image": "🎥"
+    },
+    {
+      "id": 3,
+      "name": "PTZ Security Camera",
+      "category": "cctv",
+      "description": "Pan-Tilt-Zoom camera with remote control and auto-tracking features.",
+      "price": "Contact for Price",
+      "image": "📷"
+    },
+    {
+      "id": 4,
+      "name": "Wireless IP Camera",
+      "category": "cctv",
+      "description": "WiFi-enabled camera with mobile app access and cloud storage.",
+      "price": "Contact for Price",
+      "image": "📸"
+    },
+    {
+      "id": 5,
+      "name": "NVR 16 Channel System",
+      "category": "cctv",
+      "description": "Network Video Recorder supporting up to 16 cameras with 4TB storage.",
+      "price": "Contact for Price",
+      "image": "💾"
+    },
+    {
+      "id": 6,
+      "name": "Gaming Desktop PC",
+      "category": "computer",
+      "description": "High-performance gaming PC with latest graphics card and processor.",
+      "price": "Contact for Price",
+      "image": "🖥️"
+    },
+    {
+      "id": 7,
+      "name": "Business Laptop",
+      "category": "computer",
+      "description": "Professional laptop with Intel i7, 16GB RAM, and 512GB SSD.",
+      "price": "Contact for Price",
+      "image": "💻"
+    },
+    {
+      "id": 8,
+      "name": "All-in-One PC",
+      "category": "computer",
+      "description": "Space-saving all-in-one computer with touchscreen display.",
+      "price": "Contact for Price",
+      "image": "🖥️"
+    },
+    {
+      "id": 9,
+      "name": "Wireless Mouse & Keyboard",
+      "category": "computer",
+      "description": "Ergonomic wireless combo with long battery life.",
+      "price": "Contact for Price",
+      "image": "⌨️"
+    },
+    {
+      "id": 10,
+      "name": "External SSD 1TB",
+      "category": "computer",
+      "description": "Ultra-fast portable SSD with USB-C connection.",
+      "price": "Contact for Price",
+      "image": "💿"
+    },
+    {
+      "id": 11,
+      "name": "27-inch Monitor",
+      "category": "computer",
+      "description": "Full HD LED monitor with IPS panel and HDMI connectivity.",
+      "price": "Contact for Price",
+      "image": "🖥️"
+    },
+    {
+      "id": 12,
+      "name": "UPS Battery Backup",
+      "category": "computer",
+      "description": "Uninterruptible power supply for computers and networking equipment.",
+      "price": "Contact for Price",
+      "image": "🔋"
+    }
+  ]
+}
