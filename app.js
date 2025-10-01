@@ -110,7 +110,7 @@ const DEFAULT_DATA = {
         { id: "computer", name: "Computer Appliances" }
     ],
     settings: {
-        whatsappNumber: "+415255867075",
+        whatsappNumber: "+917000651491",
         companyName: "OHU Solutions"
     }
 };
