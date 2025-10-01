@@ -111,7 +111,7 @@ const DEFAULT_DATA = {
     ],
     settings: {
         whatsappNumber: "+415255867075",
-        companyName: "OHUI Solutions"
+        companyName: "OHU Solutions"
     }
 };
 
