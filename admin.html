@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Panel - OHUI Solutions</title>
+    <title>Admin Panel - OHU Security Solutions</title>
     <link rel="stylesheet" href="admin-styles.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
     <div id="login-section" class="login-container">
         <div class="login-box">
             <h1>🔐 Admin Login</h1>
-            <p>OHUI Solutions Admin Panel</p>
+            <p>OHU Security Solutions Admin Panel</p>
             <form id="login-form">
                 <div class="form-group">
                     <input type="text" id="username" placeholder="Username" required>
@@ -30,7 +30,7 @@
     <div id="admin-section" class="admin-container" style="display: none;">
         <header class="admin-header">
             <div class="header-content">
-                <h1>OHUI Solutions - Admin Panel</h1>
+                <h1>OHU Security Solutions - Admin Panel</h1>
                 <div class="header-actions">
                     <a href="index.html" target="_blank" class="btn btn-secondary">View Website</a>
                     <button id="logout-btn" class="btn btn-danger">Logout</button>
@@ -43,8 +43,17 @@
 
         <div class="admin-content">
             <nav class="admin-nav">
-                <button class="nav-btn active" data-tab="products">📦 Products</button>
+                <button class="nav-btn active" data-tab="business">🏢 Business Info</button>
+                <button class="nav-btn" data-tab="hero">🎯 Hero Section</button>
+                <button class="nav-btn" data-tab="video">🎬 Video Section</button>
+                <button class="nav-btn" data-tab="features">✨ Features</button>
+                <button class="nav-btn" data-tab="products">📦 Products</button>
                 <button class="nav-btn" data-tab="categories">🏷️ Categories</button>
+                <button class="nav-btn" data-tab="partners">🤝 Partners</button>
+                <button class="nav-btn" data-tab="clients">👥 Clients</button>
+                <button class="nav-btn" data-tab="services">🔧 Services</button>
+                <button class="nav-btn" data-tab="reviews">⭐ Reviews</button>
+                <button class="nav-btn" data-tab="legal">📄 Legal Pages</button>
                 <button class="nav-btn" data-tab="settings">⚙️ Settings</button>
             </nav>
 
@@ -86,28 +95,390 @@
                 </div>
             </div>
 
-            <!-- Settings Tab -->
-            <div id="settings-tab" class="tab-content">
+            <!-- Business Info Tab -->
+            <div id="business-tab" class="tab-content">
                 <div class="tab-header">
-                    <h2>Settings</h2>
+                    <h2>Business Information</h2>
                 </div>
 
                 <div class="settings-form">
                     <div class="form-group">
-                        <label>WhatsApp Number</label>
-                        <input type="text" id="whatsapp-number" placeholder="e.g., +1234567890 or 1234567890">
-                        <small style="color: #666;">Include country code. You can use + symbol (it will be auto-cleaned)</small>
+                        <label>Company Name</label>
+                        <input type="text" id="business-company-name" placeholder="OHU Security Solutions">
                     </div>
                     <div class="form-group">
-                        <label>Company Name</label>
-                        <input type="text" id="company-name" placeholder="OHUI Solutions">
+                        <label>Tagline</label>
+                        <input type="text" id="business-tagline" placeholder="Your Trusted Security Partner in Gwalior">
                     </div>
-                    <button id="save-settings-btn" class="btn btn-primary">Save Settings</button>
+                    <div class="form-group">
+                        <label>WhatsApp Number</label>
+                        <input type="text" id="business-whatsapp" placeholder="+917000651491">
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" id="business-email" placeholder="info@ohusolutions.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Full Address</label>
+                        <textarea id="business-address" rows="3" placeholder="Achleshwar Complex, Naka Chandravadni, Lashkar, Gwalior - 474001"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Business Hours</label>
+                        <input type="text" id="business-hours" placeholder="Mon - Sun: 10:00 AM - 7:00 PM">
+                    </div>
+                    <div class="form-group">
+                        <label>Google Maps URL</label>
+                        <input type="text" id="business-maps-url" placeholder="https://www.google.com/maps/place/...">
+                        <small style="color: #666;">Full Google Maps link to your business</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Established Year</label>
+                        <input type="text" id="business-established" placeholder="2009">
+                    </div>
+                    <button id="save-business-btn" class="btn btn-primary">Save Business Info</button>
+                </div>
+            </div>
+
+            <!-- Hero Section Tab -->
+            <div id="hero-tab" class="tab-content">
+                <div class="tab-header">
+                    <h2>Hero Section Settings</h2>
+                </div>
+
+                <div class="settings-form">
+                    <div class="form-group">
+                        <label>Main Heading</label>
+                        <input type="text" id="hero-heading" placeholder="Complete Security & Technology Solutions in Gwalior">
+                    </div>
+                    <div class="form-group">
+                        <label>Subheading</label>
+                        <input type="text" id="hero-subheading" placeholder="Premium CCTV Surveillance Systems • Computer Appliances • Professional Installation">
+                    </div>
+                    <div class="form-group">
+                        <label>Badge 1 - Number</label>
+                        <input type="text" id="badge1-number" placeholder="5+">
+                    </div>
+                    <div class="form-group">
+                        <label>Badge 1 - Text</label>
+                        <input type="text" id="badge1-text" placeholder="Years Experience">
+                    </div>
+                    <div class="form-group">
+                        <label>Badge 2 - Number</label>
+                        <input type="text" id="badge2-number" placeholder="500+">
+                    </div>
+                    <div class="form-group">
+                        <label>Badge 2 - Text</label>
+                        <input type="text" id="badge2-text" placeholder="Happy Customers">
+                    </div>
+                    <div class="form-group">
+                        <label>Badge 3 - Number</label>
+                        <input type="text" id="badge3-number" placeholder="4.5/5">
+                    </div>
+                    <div class="form-group">
+                        <label>Badge 3 - Text</label>
+                        <input type="text" id="badge3-text" placeholder="Google Rating">
+                    </div>
+                    <div class="form-group">
+                        <label>Badge 4 - Number</label>
+                        <input type="text" id="badge4-number" placeholder="24/7">
+                    </div>
+                    <div class="form-group">
+                        <label>Badge 4 - Text</label>
+                        <input type="text" id="badge4-text" placeholder="Support Available">
+                    </div>
+                    <button id="save-hero-btn" class="btn btn-primary">Save Hero Section</button>
+                </div>
+            </div>
+
+            <!-- Video Section Tab -->
+            <div id="video-tab" class="tab-content">
+                <div class="tab-header">
+                    <h2>Video Section Settings</h2>
+                </div>
+
+                <div class="settings-form">
+                    <div class="form-group">
+                        <label>Enable Video Section</label>
+                        <label class="switch">
+                            <input type="checkbox" id="video-enabled" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Section Title</label>
+                        <input type="text" id="video-section-title" placeholder="See Our Work in Action">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Section Subtitle</label>
+                        <input type="text" id="video-section-subtitle" placeholder="Watch how we transform security and technology solutions for our clients">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Video URL (YouTube or Direct)</label>
+                        <input type="text" id="video-url" placeholder="https://www.youtube.com/embed/VIDEO_ID">
+                        <small style="display: block; margin-top: 0.5rem; color: #666;">
+                            For YouTube: Use the embed URL (youtube.com/embed/VIDEO_ID)<br>
+                            For direct videos: Use direct .mp4 URL
+                        </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Video Title</label>
+                        <input type="text" id="video-content-title" placeholder="Our Latest Project">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Video Description</label>
+                        <textarea id="video-content-description" rows="3" placeholder="Explore our professional installation services and customer testimonials"></textarea>
+                    </div>
+
+                    <button id="save-video-btn" class="btn btn-primary">Save Video Section</button>
+                </div>
+            </div>
+
+            <!-- Features Tab -->
+            <div id="features-tab" class="tab-content">
+                <div class="tab-header">
+                    <h2>Manage Features</h2>
+                    <button id="add-feature-btn" class="btn btn-primary">+ Add New Feature</button>
+                </div>
+
+                <div class="features-list">
+                    <table id="features-table">
+                        <thead>
+                            <tr>
+                                <th>Icon</th>
+                                <th>Title</th>
+                                <th>Description</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="features-tbody">
+                            <!-- Features will be loaded here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Partners Tab -->
+            <div id="partners-tab" class="tab-content">
+                <div class="tab-header">
+                    <h2>Manage Trusted Partners</h2>
+                    <button id="add-partner-btn" class="btn btn-primary">+ Add New Partner</button>
+                </div>
+
+                <div class="partners-list">
+                    <table id="partners-table">
+                        <thead>
+                            <tr>
+                                <th>Logo/Name</th>
+                                <th>Display Name</th>
+                                <th>Order</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="partners-tbody">
+                            <!-- Partners will be loaded here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Clients Tab -->
+            <div id="clients-tab" class="tab-content">
+                <div class="tab-header">
+                    <h2>Manage Clients</h2>
+                    <button id="add-client-btn" class="btn btn-primary">+ Add New Client</button>
+                </div>
+
+                <div class="clients-list">
+                    <table id="clients-table">
+                        <thead>
+                            <tr>
+                                <th>Icon/Logo</th>
+                                <th>Client Name</th>
+                                <th>Order</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="clients-tbody">
+                            <!-- Clients will be loaded here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Services Tab -->
+            <div id="services-tab" class="tab-content">
+                <div class="tab-header">
+                    <h2>Manage Services</h2>
+                    <button id="add-service-btn" class="btn btn-primary">+ Add New Service</button>
+                </div>
+
+                <div class="services-list">
+                    <table id="services-table">
+                        <thead>
+                            <tr>
+                                <th>Icon</th>
+                                <th>Title</th>
+                                <th>Description</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="services-tbody">
+                            <!-- Services will be loaded here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Reviews Tab -->
+            <div id="reviews-tab" class="tab-content">
+                <div class="tab-header">
+                    <h2>Manage Reviews</h2>
+                    <div>
+                        <button id="import-review-btn" class="btn btn-secondary" style="margin-right: 0.5rem;">📥 Easy Import from Google</button>
+                        <button id="add-review-btn" class="btn btn-primary">+ Add Manually</button>
+                    </div>
+                </div>
+
+                <div class="settings-form" style="margin-bottom: 2rem;">
+                    <div class="form-group">
+                        <label>Overall Rating</label>
+                        <input type="text" id="reviews-rating" placeholder="4.5">
+                    </div>
+                    <div class="form-group">
+                        <label>Total Reviews Count</label>
+                        <input type="text" id="reviews-count" placeholder="120+">
+                    </div>
+                    <div class="form-group">
+                        <label>Google Review Link</label>
+                        <input type="text" id="reviews-google-link" placeholder="https://search.google.com/local/writereview?placeid=...">
+                    </div>
+                    <div class="form-group">
+                        <label>JustDial Link</label>
+                        <input type="text" id="reviews-justdial-link" placeholder="https://www.justdial.com/...">
+                    </div>
+                    <button id="save-review-settings-btn" class="btn btn-primary">Save Review Settings</button>
+                </div>
+
+                <div class="reviews-list">
+                    <table id="reviews-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Rating</th>
+                                <th>Review</th>
+                                <th>Date</th>
+                                <th>Source</th>
+                                <th>Visible</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="reviews-tbody">
+                            <!-- Reviews will be loaded here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Legal Pages Tab -->
+            <div id="legal-tab" class="tab-content">
+                <div class="tab-header">
+                    <h2>Legal Pages Management</h2>
+                </div>
+
+                <div class="settings-form" style="margin-bottom: 2rem;">
+                    <h3>Privacy Policy</h3>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="privacy-enabled" style="width: auto; margin-right: 0.5rem;">
+                            Enable Privacy Policy Page
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>Privacy Policy Content</label>
+                        <textarea id="privacy-content" rows="10" placeholder="Enter your privacy policy..."></textarea>
+                        <small style="color: #666;">Supports HTML formatting. You can paste content from a text editor.</small>
+                    </div>
+                    <button id="save-privacy-btn" class="btn btn-primary">Save Privacy Policy</button>
+                </div>
+
+                <div class="settings-form" style="margin-top: 3rem;">
+                    <h3>Terms & Conditions</h3>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="terms-enabled" style="width: auto; margin-right: 0.5rem;">
+                            Enable Terms & Conditions Page
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>Terms & Conditions Content</label>
+                        <textarea id="terms-content" rows="10" placeholder="Enter your terms and conditions..."></textarea>
+                        <small style="color: #666;">Supports HTML formatting. You can paste content from a text editor.</small>
+                    </div>
+                    <button id="save-terms-btn" class="btn btn-primary">Save Terms & Conditions</button>
+                </div>
+
+                <div style="background: #e3f2fd; padding: 1rem; border-radius: 8px; margin-top: 2rem;">
+                    <strong>📝 Note:</strong> When enabled, these pages will be accessible at:
+                    <ul style="margin: 0.5rem 0 0 1.5rem;">
+                        <li><code>privacy.html</code> - Privacy Policy</li>
+                        <li><code>terms.html</code> - Terms & Conditions</li>
+                    </ul>
+                    Links will appear in the footer automatically.
+                </div>
+            </div>
+
+            <!-- Settings Tab -->
+            <div id="settings-tab" class="tab-content">
+                <div class="tab-header">
+                    <h2>Advanced Settings</h2>
+                </div>
+
+                <div class="settings-form">
+                    <h3>Social Media Links</h3>
+                    <div class="form-group">
+                        <label>Facebook URL</label>
+                        <input type="text" id="social-facebook" placeholder="https://facebook.com/yourpage">
+                    </div>
+                    <div class="form-group">
+                        <label>Instagram URL</label>
+                        <input type="text" id="social-instagram" placeholder="https://instagram.com/yourpage">
+                    </div>
+                    <div class="form-group">
+                        <label>Twitter URL</label>
+                        <input type="text" id="social-twitter" placeholder="https://twitter.com/yourpage">
+                    </div>
+                    <div class="form-group">
+                        <label>LinkedIn URL</label>
+                        <input type="text" id="social-linkedin" placeholder="https://linkedin.com/company/yourpage">
+                    </div>
+                    <button id="save-social-btn" class="btn btn-primary">Save Social Links</button>
+                </div>
+
+                <div class="settings-form" style="margin-top: 2rem;">
+                    <h3>About Section</h3>
+                    <div class="form-group">
+                        <label>About Introduction</label>
+                        <textarea id="about-intro" rows="4" placeholder="Leading provider of CCTV surveillance systems..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Mission Statement</label>
+                        <textarea id="about-mission" rows="3" placeholder="To provide cutting-edge security solutions..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Vision Statement</label>
+                        <textarea id="about-vision" rows="3" placeholder="To be the most trusted name in security..."></textarea>
+                    </div>
+                    <button id="save-about-btn" class="btn btn-primary">Save About Section</button>
                 </div>
 
                 <div class="danger-zone">
                     <h3>Danger Zone</h3>
-                    <button id="export-data-btn" class="btn btn-secondary">Export Data</button>
+                    <button id="export-data-btn" class="btn btn-secondary">Export All Data</button>
                     <button id="import-data-btn" class="btn btn-secondary">Import Data</button>
                     <input type="file" id="import-file" accept=".json" style="display: none;">
                     <button id="reset-data-btn" class="btn btn-danger">Reset to Default</button>
@@ -176,6 +547,213 @@
                     <button type="submit" class="btn btn-primary">Save Category</button>
                 </div>
             </form>
+        </div>
+    </div>
+
+    <!-- Review Modal -->
+    <div id="review-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="review-modal-title">Add New Review</h2>
+                <span class="close">&times;</span>
+            </div>
+            <form id="review-form">
+                <div class="form-group">
+                    <label>Reviewer Name *</label>
+                    <input type="text" id="review-name" required>
+                </div>
+                <div class="form-group">
+                    <label>Rating (1-5) *</label>
+                    <select id="review-rating" required>
+                        <option value="5">★★★★★ (5 stars)</option>
+                        <option value="4">★★★★ (4 stars)</option>
+                        <option value="3">★★★ (3 stars)</option>
+                        <option value="2">★★ (2 stars)</option>
+                        <option value="1">★ (1 star)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Review Text *</label>
+                    <textarea id="review-text" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Date *</label>
+                    <input type="text" id="review-date" required placeholder="e.g., 18th May, 2021">
+                </div>
+                <div class="form-group">
+                    <label>Source *</label>
+                    <select id="review-source" required>
+                        <option value="Google">Google</option>
+                        <option value="JustDial">JustDial</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Direct">Direct</option>
+                    </select>
+                </div>
+                <input type="hidden" id="review-id">
+                <div class="modal-actions">
+                    <button type="button" class="btn btn-secondary close-modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Save Review</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Feature Modal -->
+    <div id="feature-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="feature-modal-title">Add New Feature</h2>
+                <span class="close">&times;</span>
+            </div>
+            <form id="feature-form">
+                <div class="form-group">
+                    <label>Icon (Emoji) *</label>
+                    <input type="text" id="feature-icon" required placeholder="🛠️">
+                </div>
+                <div class="form-group">
+                    <label>Title *</label>
+                    <input type="text" id="feature-title" required placeholder="Free Consultation">
+                </div>
+                <div class="form-group">
+                    <label>Description *</label>
+                    <textarea id="feature-description" rows="3" required placeholder="Expert advice on installation and setup"></textarea>
+                </div>
+                <input type="hidden" id="feature-id">
+                <div class="modal-actions">
+                    <button type="button" class="btn btn-secondary close-modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Save Feature</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Partner Modal -->
+    <div id="partner-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="partner-modal-title">Add New Partner</h2>
+                <span class="close">&times;</span>
+            </div>
+            <form id="partner-form">
+                <div class="form-group">
+                    <label>Partner Name *</label>
+                    <input type="text" id="partner-name" required placeholder="HIKVISION">
+                </div>
+                <div class="form-group">
+                    <label>Logo URL or Text</label>
+                    <input type="text" id="partner-logo" placeholder="Leave empty to use text name">
+                    <small style="color: #666;">Upload image elsewhere and paste URL, or leave empty to show text</small>
+                </div>
+                <div class="form-group">
+                    <label>Display Order</label>
+                    <input type="number" id="partner-order" value="0" min="0">
+                </div>
+                <input type="hidden" id="partner-id">
+                <div class="modal-actions">
+                    <button type="button" class="btn btn-secondary close-modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Save Partner</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Client Modal -->
+    <div id="client-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="client-modal-title">Add New Client Category</h2>
+                <span class="close">&times;</span>
+            </div>
+            <form id="client-form">
+                <div class="form-group">
+                    <label>Client Category Name *</label>
+                    <input type="text" id="client-name" required placeholder="Corporate Offices">
+                </div>
+                <div class="form-group">
+                    <label>Icon (Emoji) *</label>
+                    <input type="text" id="client-icon" required placeholder="🏢">
+                </div>
+                <div class="form-group">
+                    <label>Display Order</label>
+                    <input type="number" id="client-order" value="0" min="0">
+                </div>
+                <input type="hidden" id="client-id">
+                <div class="modal-actions">
+                    <button type="button" class="btn btn-secondary close-modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Save Client</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Service Modal -->
+    <div id="service-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="service-modal-title">Add New Service</h2>
+                <span class="close">&times;</span>
+            </div>
+            <form id="service-form">
+                <div class="form-group">
+                    <label>Icon (Emoji) *</label>
+                    <input type="text" id="service-icon" required placeholder="📦">
+                </div>
+                <div class="form-group">
+                    <label>Service Title *</label>
+                    <input type="text" id="service-title" required placeholder="Installation Services">
+                </div>
+                <div class="form-group">
+                    <label>Description *</label>
+                    <textarea id="service-description" rows="4" required placeholder="Professional installation of CCTV systems..."></textarea>
+                </div>
+                <input type="hidden" id="service-id">
+                <div class="modal-actions">
+                    <button type="button" class="btn btn-secondary close-modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Save Service</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Review Import Modal -->
+    <div id="import-review-modal" class="modal">
+        <div class="modal-content" style="max-width: 700px;">
+            <div class="modal-header">
+                <h2>📥 Easy Import Reviews from Google</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div style="padding: 1.5rem;">
+                <div style="background: #e3f2fd; padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem;">
+                    <strong>How to import:</strong>
+                    <ol style="margin: 0.5rem 0 0 1.5rem; line-height: 1.8;">
+                        <li>Click the button below to open your Google Business page</li>
+                        <li>Copy reviews from Google (Name, Rating, Text, Date)</li>
+                        <li>Paste each review below in the format shown</li>
+                        <li>Click "Parse & Import" to add them all at once</li>
+                    </ol>
+                </div>
+
+                <a href="https://www.google.com/maps/place/OhU+Security+Solutions" target="_blank" class="btn btn-primary" style="margin-bottom: 1rem; display: inline-block;">
+                    🔗 Open Google Business Page
+                </a>
+
+                <div class="form-group">
+                    <label>Paste Reviews Here (One per line in format: Name | Rating | Review Text | Date | Source)</label>
+                    <textarea id="import-reviews-text" rows="10" placeholder="Example:&#10;Sumit Jha | 5 | Great service! | 18th May, 2021 | Google&#10;Rahul Kumar | 4 | Good quality products | 20th June, 2021 | Google"></textarea>
+                    <small style="color: #666;">Format: Name | Rating (1-5) | Review Text | Date | Source (Google/JustDial)</small>
+                </div>
+
+                <div class="modal-actions">
+                    <button type="button" class="btn btn-secondary close-modal">Cancel</button>
+                    <button type="button" id="parse-import-btn" class="btn btn-primary">Parse & Import Reviews</button>
+                </div>
+
+                <div id="import-preview" style="margin-top: 1.5rem; display: none;">
+                    <h4>Preview (Check boxes to import):</h4>
+                    <div id="import-preview-list" style="max-height: 300px; overflow-y: auto;"></div>
+                    <button type="button" id="confirm-import-btn" class="btn btn-primary" style="margin-top: 1rem;">✓ Import Selected Reviews</button>
+                </div>
+            </div>
         </div>
     </div>
 
